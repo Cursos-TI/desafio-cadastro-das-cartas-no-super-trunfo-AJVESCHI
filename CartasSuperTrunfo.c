@@ -113,25 +113,14 @@ int main() {
     int resultadoDENSI;
     int resultadoSUPERP;
 
-    // Calculo do vencedor (comparação)
-    resultadoPOP = populacao1 > populacao2;
-    resultadoAREA = area1 > area2;
-    resultadoPONTOST = pontos_turisticos1 > pontos_turisticos2;
-    resultadoPIB = pib1 > pib2;
-    resultadoPCAPITA = PIBper1 > PIBper2;
-    resultadoDENSI = densidade1 < densidade2;
-    resultadoSUPERP - superPoder1 > superPoder2;
-
-    // Mostrar resultado vencedor
-
+    // Mostrar resultado vencedor - População
     printf("\nResultado do vencedor\n");
-    printf("População: Carta 1 venceu? %d\n", resultadoPOP);
-    printf("Área: Carta 1 venceu? %d\n", resultadoAREA);
-    printf("Pontos turísticos: Carta 1 venceu? %d\n", resultadoPONTOST);
-    printf("PIB: Carta 1 venceu? %d\n", resultadoPIB);
-    printf("PIB per Capita: Carta 1 venceu? %d\n", resultadoPCAPITA);
-    printf("Densidade: Carta 1 venceu? %d\n", resultadoDENSI);
-    printf("Super Poder: Carta 1 venceu? %d\n", resultadoSUPERP);
+    if (populacao1 > populacao2) {
+        printf("Carta 1 venceu!\n");
+      } else {
+        printf("Carta 2 venceu!\n");
+      }
+
     
     return 0;
 }
