@@ -115,6 +115,8 @@ int main() {
 
     // Mostrar resultado vencedor - População
     printf("\nResultado do vencedor\n");
+    printf("Carta 1 - %s (%s): %u\n", nome1, estado1, populacao1);
+    printf("Carta 2 - %s (%s): %u\n", nome2, estado2, populacao2);
     if (populacao1 > populacao2) {
         printf("Carta 1 venceu!\n");
       } else {
